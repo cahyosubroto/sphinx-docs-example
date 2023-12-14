@@ -1,4 +1,4 @@
-name: Deploy static HTML files to Pages
+name: Deploy static HTML files to GitHub Pages
 
 on:
   push:
@@ -8,8 +8,9 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v2
 
       - name: Deploy to GitHub Pages
